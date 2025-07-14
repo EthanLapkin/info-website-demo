@@ -20,7 +20,7 @@ export default function Home() {
         </Route>
 
         {/* Other Routes */}
-        <Route path="/example" element={<Test />} />
+        <Route path="/test" element={<Test />} />
         
       </Routes>
     </>
