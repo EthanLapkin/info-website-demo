@@ -1,6 +1,21 @@
-
+import { useNavigate } from "react-router-dom";
 
 const Welcome = () => {
+
+  const navigate = useNavigate();
+
+  const handleWindows = () => {
+    navigate("/windows-first");
+  };
+
+  const handleMac = () => {
+    navigate("/mac-first");
+  };
+
+  const handleLinux = () => {
+    navigate("/linux-first");
+  };
+
   return (
     <main className="flex items-center justify-center pt-16 pb-4">
       <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
@@ -11,7 +26,7 @@ const Welcome = () => {
             </h1>
           </div>
         </header>
-        <div className="w-[70%]">
+        <div className=" flex items-center w-[70%]">
             <p className="px-16 text-center justify-center">
               The purpose of this website is to explain basic computer things for people that don&apos;t know them. This was made in my free time and is not the work of an expert, so I apologize if the instruction is not at a professional level. 
               The website will have several different pages that you can move to either through buttons on screen that guide you based on your situation or via a menu that can be accessed at the top left of the screen. 
@@ -19,6 +34,31 @@ const Welcome = () => {
               The first thing to do is to know what general type of computer you have, this can also be called your operating system, or OS for short. The most common ones, and the ones addressed here, are Windows, Mac, and Linux. Please select the one you have.
 
             </p>
+        </div>
+        <div className="container-md">
+          <div className="row">
+            <div className="col">
+              <button className="btn btn-primary" 
+              style={{ minWidth: "50px", backgroundColor: "rgba(57, 111, 248, 1)", borderColor: "mediumblue" }}
+              onClick={handleWindows}>
+                Windows
+              </button>
+            </div>
+            <div className="col">
+              <button className="btn btn-primary" 
+              style={{ minWidth: "50px", backgroundColor: "rgba(57, 111, 248, 1)", borderColor: "mediumblue" }}
+              onClick={handleMac}>
+                Mac
+              </button>
+            </div>
+            <div className="col">
+              <button className="btn btn-primary" 
+              style={{ minWidth: "50px", backgroundColor: "rgba(57, 111, 248, 1)", borderColor: "mediumblue" }}
+              onClick={handleLinux}>
+                Linux
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </main>
