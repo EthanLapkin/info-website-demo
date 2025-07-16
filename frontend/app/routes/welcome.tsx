@@ -5,15 +5,15 @@ const Welcome = () => {
   const navigate = useNavigate();
 
   const handleWindows = () => {
-    navigate("/windows-first");
+    navigate("/windows/windows-first");
   };
 
   const handleMac = () => {
-    navigate("/mac-first");
+    navigate("/mac/mac-first");
   };
 
   const handleLinux = () => {
-    navigate("/linux-first");
+    navigate("/linux/linux-first");
   };
 
   return (

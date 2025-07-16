@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import Welcome from "./routes/welcome";
+import Welcome from "./welcome";
 import App from "~/root";
-import Test from "./routes/test";
-import WindowsFirst from "./routes/windowsFirst";
-import MacFirst from "./routes/macFirst";
-import LinuxFirst from "./routes/linuxFirst";
+import Test from "./test";
+import WindowsFirst from "./windowsFirst";
+import MacFirst from "./macFirst";
+import LinuxFirst from "./linuxFirst";
 
 // export function meta({}: Route.MetaArgs) {
 //   return [
