@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom";
+import { Button, Col, Container, Row } from "react-bootstrap";
+import { Test } from "./test";
 
 const Welcome = () => {
 
@@ -18,49 +20,48 @@ const Welcome = () => {
 
   return (
     <main className="flex items-center justify-center pt-16 pb-4">
-      <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
-        <header className="flex flex-col items-center gap-9">
-          <div className="w-[500px] max-w-[100vw] p-4">
-            <h1 style={{textAlign: "center", fontSize: "44px"}}>
-              Hello!
-            </h1>
-          </div>
-        </header>
-        <div className=" flex items-center w-[70%]">
-            <p className="px-16 text-center justify-center">
-              The purpose of this website is to explain basic computer things for people that don&apos;t know them. This was made in my free time and is not the work of an expert, so I apologize if the instruction is not at a professional level. 
-              The website will have several different pages that you can move to either through buttons on screen that guide you based on your situation or via a menu that can be accessed at the top left of the screen. 
-              If you already know how to do something or want something specific, feel free to skip ahead.
-              The first thing to do is to know what general type of computer you have, this can also be called your operating system, or OS for short. The most common ones, and the ones addressed here, are Windows, Mac, and Linux. Please select the one you have.
-
-            </p>
+      <header className="flex flex-col items-center gap-9">
+        <div className="w-[500px] max-w-[100vw] p-4">
+          <h1 style={{textAlign: "center", fontSize: "44px"}}>
+            Hello!
+          </h1>
         </div>
-        <div className="container-md">
-          <div className="row">
-            <div className="col">
-              <button className="btn btn-primary" 
-              style={{ minWidth: "50px", backgroundColor: "rgba(57, 111, 248, 1)", borderColor: "mediumblue" }}
-              onClick={handleWindows}>
-                Windows
-              </button>
-            </div>
-            <div className="col">
-              <button className="btn btn-primary" 
-              style={{ minWidth: "50px", backgroundColor: "rgba(57, 111, 248, 1)", borderColor: "mediumblue" }}
-              onClick={handleMac}>
-                Mac
-              </button>
-            </div>
-            <div className="col">
-              <button className="btn btn-primary" 
-              style={{ minWidth: "50px", backgroundColor: "rgba(57, 111, 248, 1)", borderColor: "mediumblue" }}
-              onClick={handleLinux}>
-                Linux
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      </header>
+      <Test/>
+      <Container fluid="md">
+          <p>
+            The purpose of this website is to explain basic computer things for people that don&apos;t know them. This was made in my free time and is not the work of an expert, so I apologize if the instruction is not at a professional level. 
+            The website will have several different pages that you can move to either through buttons on screen that guide you based on your situation or via a menu that can be accessed at the top left of the screen. 
+            If you already know how to do something or want something specific, feel free to skip ahead.
+            The first thing to do is to know what general type of computer you have, this can also be called your operating system, or OS for short. 
+            The most common ones, and the ones addressed here, are Windows, Mac, and Linux. Please select the one you have.
+          </p>
+      </Container>
+      <Container>
+        <Row>
+          <Col>
+            <Button variant="primary" size="lg" 
+            style={{ minWidth: "50px", backgroundColor: "rgba(57, 111, 248, 1)", borderColor: "mediumblue" }}
+            onClick={handleWindows}>
+              Windows
+            </Button>
+          </Col>
+          <Col>
+            <Button variant="primary" size="lg"
+            style={{ minWidth: "50px", backgroundColor: "rgba(57, 111, 248, 1)", borderColor: "mediumblue" }}
+            onClick={handleMac}>
+              Mac
+            </Button>
+          </Col>
+          <Col>
+            <Button variant="primary" size="lg"
+            style={{ minWidth: "50px", backgroundColor: "rgba(57, 111, 248, 1)", borderColor: "mediumblue" }}
+            onClick={handleLinux}>
+              Linux
+            </Button>
+          </Col>
+        </Row>
+      </Container>
     </main>
   );
 }
