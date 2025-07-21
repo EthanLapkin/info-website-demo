@@ -27,7 +27,7 @@ const Welcome = () => {
           </h1>
         </div>
       </header>
-      <Test/>
+      {/* <Test/> */}
       <Container fluid="md">
           <p>
             The purpose of this website is to explain basic computer things for people that don&apos;t know them. This was made in my free time and is not the work of an expert, so I apologize if the instruction is not at a professional level. 
