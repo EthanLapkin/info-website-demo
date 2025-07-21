@@ -19,8 +19,8 @@ const Welcome = () => {
   };
 
   return (
-    <main className="flex items-center justify-center pt-16 pb-4">
-      <header className="flex flex-col items-center gap-9">
+    <main className="flex items-center justify-center">
+      <header className="flex flex-col items-center">
         <div className="w-[500px] max-w-[100vw] p-4">
           <h1 style={{textAlign: "center", fontSize: "44px"}}>
             Hello!
@@ -28,7 +28,7 @@ const Welcome = () => {
         </div>
       </header>
       {/* <Test/> */}
-      <Container fluid="md">
+      <Container>
           <p>
             The purpose of this website is to explain basic computer things for people that don&apos;t know them. This was made in my free time and is not the work of an expert, so I apologize if the instruction is not at a professional level. 
             The website will have several different pages that you can move to either through buttons on screen that guide you based on your situation or via a menu that can be accessed at the top left of the screen. 
@@ -38,22 +38,22 @@ const Welcome = () => {
           </p>
       </Container>
       <Container>
-        <Row>
-          <Col>
+        <Row className="justify-content-md-center">
+          <Col sm md="2" className="justify-content-center">
             <Button variant="primary" size="lg" 
             style={{ minWidth: "50px", backgroundColor: "rgba(57, 111, 248, 1)", borderColor: "mediumblue" }}
             onClick={handleWindows}>
               Windows
             </Button>
           </Col>
-          <Col>
+          <Col sm md="2" className="items-center">
             <Button variant="primary" size="lg"
             style={{ minWidth: "50px", backgroundColor: "rgba(57, 111, 248, 1)", borderColor: "mediumblue" }}
             onClick={handleMac}>
               Mac
             </Button>
           </Col>
-          <Col>
+          <Col sm md="2" className="justify-content-center">
             <Button variant="primary" size="lg"
             style={{ minWidth: "50px", backgroundColor: "rgba(57, 111, 248, 1)", borderColor: "mediumblue" }}
             onClick={handleLinux}>
@@ -65,28 +65,5 @@ const Welcome = () => {
     </main>
   );
 }
-/* this is here for my own reference, this is not a part of the website as is
-const resources = [
-  {
-    href: "https://reactrouter.com/docs",
-    text: "React Router Docs",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="20"
-        viewBox="0 0 20 20"
-        fill="none"
-        className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300"
-      >
-        <path
-          d="M9.99981 10.0751V9.99992M17.4688 17.4688C15.889 19.0485 11.2645 16.9853 7.13958 12.8604C3.01467 8.73546 0.951405 4.11091 2.53116 2.53116C4.11091 0.951405 8.73546 3.01467 12.8604 7.13958C16.9853 11.2645 19.0485 15.889 17.4688 17.4688ZM2.53132 17.4688C0.951566 15.8891 3.01483 11.2645 7.13974 7.13963C11.2647 3.01471 15.8892 0.951453 17.469 2.53121C19.0487 4.11096 16.9854 8.73551 12.8605 12.8604C8.73562 16.9853 4.11107 19.0486 2.53132 17.4688Z"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
-  },
-];*/
 
 export default Welcome;
