@@ -1,3 +1,4 @@
+import { Button, Col, Container, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 export default function MacFirst() {
@@ -5,7 +6,7 @@ export default function MacFirst() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/welcome");
+    navigate("/");
   }
 
   const handleNext = () => {
@@ -20,6 +21,20 @@ export default function MacFirst() {
               
             </p>
         </div>
+        <Container>
+          <Row>
+            <Col>
+              <Button variant="primary" size="lg" onClick={handleNext}>
+                Okay
+              </Button>
+            </Col>
+            <Col>
+              <Button variant="primary" size="lg" onClick={handleBack}>
+                Back
+              </Button>
+            </Col>
+          </Row>
+        </Container>
     </>
   );
 }

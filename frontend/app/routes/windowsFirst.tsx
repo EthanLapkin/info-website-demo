@@ -1,3 +1,4 @@
+import { Button, Col, Container, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 export default function WindowsFirst() {
@@ -5,7 +6,7 @@ export default function WindowsFirst() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/welcome");
+    navigate("/");
   }
 
   const handleNext = () => {
@@ -25,6 +26,20 @@ export default function WindowsFirst() {
               Try clicking on the four blue boxes at the bottom left and then clicking on the yellow and blue rectangle again to see how changing windows works.
             </p>
         </div>
+        <Container>
+          <Row>
+            <Col>
+              <Button variant="primary" size="lg" onClick={handleNext}>
+                Okay
+              </Button>
+            </Col>
+            <Col>
+              <Button variant="primary" size="lg" onClick={handleBack}>
+                Back
+              </Button>
+            </Col>
+          </Row>
+        </Container>
     </>
   );
 }

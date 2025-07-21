@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import { Test } from "./test";
 
 const Welcome = () => {
 
@@ -27,7 +26,6 @@ const Welcome = () => {
           </h1>
         </div>
       </header>
-      {/* <Test/> */}
       <Container>
           <p>
             The purpose of this website is to explain basic computer things for people that don&apos;t know them. This was made in my free time and is not the work of an expert, so I apologize if the instruction is not at a professional level. 
@@ -40,23 +38,17 @@ const Welcome = () => {
       <Container>
         <Row className="justify-content-md-center">
           <Col sm md="2" className="justify-content-center">
-            <Button variant="primary" size="lg" 
-            style={{ minWidth: "50px", backgroundColor: "rgba(57, 111, 248, 1)", borderColor: "mediumblue" }}
-            onClick={handleWindows}>
+            <Button variant="primary" size="lg" onClick={handleWindows}>
               Windows
             </Button>
           </Col>
           <Col sm md="2" className="items-center">
-            <Button variant="primary" size="lg"
-            style={{ minWidth: "50px", backgroundColor: "rgba(57, 111, 248, 1)", borderColor: "mediumblue" }}
-            onClick={handleMac}>
+            <Button variant="primary" size="lg" onClick={handleMac}>
               Mac
             </Button>
           </Col>
           <Col sm md="2" className="justify-content-center">
-            <Button variant="primary" size="lg"
-            style={{ minWidth: "50px", backgroundColor: "rgba(57, 111, 248, 1)", borderColor: "mediumblue" }}
-            onClick={handleLinux}>
+            <Button variant="primary" size="lg" onClick={handleLinux}>
               Linux
             </Button>
           </Col>
