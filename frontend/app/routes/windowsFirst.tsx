@@ -18,7 +18,7 @@ export default function WindowsFirst() {
         <div>
             <p>
               The first thing we will address is how to open a window.
-              When you open your computer, you should see a yellow square with a small blue rectangle at the bottom of the screen, this is the File Explorer. 
+              When you open your computer past the login, you should see several small symbols at the bottom of your screen, one of them being a yellow square with a small blue rectangle: this is a program called File Explorer. 
               If you take your cursor and hover over it, you will see that the name appears nearby. 
               Hovering over things is a good way to find out their name if there isn&apos;t one, or to see the full name if it is too long for the place it is displayed. 
               You can hover over the other symbols down there if you like. Click on the file explorer box, and you will see a new rectangle appear on your screen. 
