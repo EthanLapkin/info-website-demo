@@ -18,7 +18,7 @@ export default function WindowsSaveFile() {
         <div>
             <p>
               Since we have created our file, let&apos;s save it and then find it afterwards
-              Look to the top left of the window for the word File, click on it and the the words Save As that appear in the menu after clicking File. 
+              Look to the top left of the window for the word File, click on it and the words Save As that appear in the menu after clicking File. 
               This will open up a temporary window that lets you name your file and choose where on your computer it will be located. 
               Note that you cannot click away from temporary windows until you deal with them, 
               if you want to close it then either click the word cancel in the bottom right, or the X in the top right. 
