@@ -1,7 +1,7 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
-export default function WindowsFirst() {
+export default function WindowsCloseMaxMin() {
 
   const navigate = useNavigate();
 
@@ -17,6 +17,7 @@ export default function WindowsFirst() {
     <>
         <div>
             <p>
+              Allow me to quickly teach you about basic window management.
               After you&apos;ve opened up a window, look to the top right of the window, not the screen. 
               There should be three symbols, a line, a box, and an X. 
               The line is for minimize, which puts the window away but doesn&apos;t close it, the box is for maximize, which makes it take up your whole screen, and the X is for close, which stops it from running. 

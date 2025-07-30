@@ -14,7 +14,7 @@ const Welcome = () => {
   };
 
   const handleLinux = () => {
-    navigate("/linux/linux-first");
+    navigate("/linux/linux-disclaimer");
   };
 
   return (
