@@ -10,7 +10,7 @@ export default function LinuxDisclaimer() {
   }
 
   const handleNext = () => {
-    navigate("/linux-first");
+    navigate("/linux/linux-first");
   }
 
   return (

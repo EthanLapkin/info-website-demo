@@ -10,7 +10,7 @@ export default function WindowsFirst() {
   }
 
   const handleNext = () => {
-    navigate("/windows-close-max-min");
+    navigate("/windows/windows-close-max-min");
   }
 
   return (

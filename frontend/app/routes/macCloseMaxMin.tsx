@@ -6,11 +6,11 @@ export default function MacCloseMaxMin() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/macFirst");
+    navigate("/mac/mac-first");
   }
 
   const handleNext = () => {
-    navigate("/mac-create-file");
+    navigate("/mac/mac-create-file");
   }
 
   return (

@@ -19,7 +19,7 @@ const Welcome = () => {
         <h1 className="hero-title">Hello!</h1>
         <p className="hero-subtitle">
           This website explains basic computer concepts in a beginner-friendly way.
-          It’s made in my free time, so while it might not be expert-level, I hope it helps you.
+          It&apos;s made in my free time, so while it might not be expert-level, I hope it helps you.
         </p>
       </section>
 

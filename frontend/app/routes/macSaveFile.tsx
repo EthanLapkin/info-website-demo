@@ -6,11 +6,11 @@ export default function MacSaveFile() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/mac-create-file");
+    navigate("/mac/mac-create-file");
   }
 
 //   const handleNext = () => {
-//     navigate("/linux-save-file");
+//     navigate("/mac/mac-save-file");
 //   }
 
   return (

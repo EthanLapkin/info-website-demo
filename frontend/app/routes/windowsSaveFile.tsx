@@ -6,11 +6,11 @@ export default function WindowsSaveFile() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/windows-create-file");
+    navigate("/windows/windows-create-file");
   }
 
 //   const handleNext = () => {
-//     navigate("/linux-save-file");
+//     navigate("/windows/windows-save-file");
 //   }
 
   return (

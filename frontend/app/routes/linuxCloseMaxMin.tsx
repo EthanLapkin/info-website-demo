@@ -6,11 +6,11 @@ export default function LinuxCloseMaxMin() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/linux-first");
+    navigate("/linux/linux-first");
   }
 
   const handleNext = () => {
-    navigate("/linux-create-file");
+    navigate("/linux/linux-create-file");
   }
 
   return (

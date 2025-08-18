@@ -10,7 +10,7 @@ export default function MacFirst() {
   }
 
   const handleNext = () => {
-    navigate("/mac-close-max-min");
+    navigate("/mac/mac-close-max-min");
   }
 
   return (

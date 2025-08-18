@@ -6,11 +6,11 @@ export default function LinuxFirst() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/linux-disclaimer");
+    navigate("/linux/linux-disclaimer");
   }
 
   const handleNext = () => {
-    navigate("/linux-close-max-min");
+    navigate("/linux/linux-close-max-min");
   }
 
   return (

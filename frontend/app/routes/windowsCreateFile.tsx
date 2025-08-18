@@ -6,11 +6,11 @@ export default function windowsCreateFile() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/windows-close-max-min");
+    navigate("/windows/windows-close-max-min");
   }
 
   const handleNext = () => {
-    navigate("/windows-save-file");
+    navigate("/windows/windows-save-file");
   }
 
   return (

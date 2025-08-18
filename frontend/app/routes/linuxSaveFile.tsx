@@ -6,11 +6,11 @@ export default function LinuxSaveFile() {
   const navigate = useNavigate();
 
   const handleBack = () => {
-    navigate("/linux-create-file");
+    navigate("/linux/linux-create-file");
   }
 
 //   const handleNext = () => {
-//     navigate("/linux-save-file");
+//     navigate("/linux/linux-save-file");
 //   }
 
   return (
