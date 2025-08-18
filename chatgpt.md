@@ -1,0 +1,10 @@
+This is just a place to organize my thoughts on how chatgpt has worked in the context of this project. 
+Firstly, I only started employing it partway through, so all file naming and arrangement are my work or default to the react router setup. Chatgpt also played no part in writing this or the README.
+What I first employed it for was to make the UI for my pages more visually interesting. I had thought of using canva for this, but on reccomendation I took this as an opportunity to test out the capabilities of the AI and increase my familiarity with it.
+Initially, it was able to very quickly generate a competent bootstrap react version of my welcome page, and was even able to alter it to use css based motion as opposed to framer motion, which is apparently incompatible with my project.
+The AI was able to generate code for multiple contexts, make meaningful changes when shown errors, and come up with secondary solutions.
+A major issue however, is when I told it that the server could not find my webpages.
+The correct solution was that I had forgotten that I changed my pathing to have folders (ex: /mac/mac-first instead of /mac-first) and had not noticed I didn't update my navigate functions, but chatgpt tried to solve this in the same way as the previous problem, with imports and updated file formatting. This was not only incorrect, but following the instructions disabled javascript somehow, and prevented the website from working at all. 
+It also hallucinated that vite 5 has a server setting called historyApiFallback until corrected.
+Overall, chatgpt did a good job at generating and altering code, but was unable to fix existing problems, and did not fully grasp the context in which it was working, which led to repeated bad advice and hallucinations.
+When I use chatgpt again in the future, I will need to remember that it is far more effective at starting from nothing, and to ask it to provide sources for its information immediately when dealing with external libraries.
