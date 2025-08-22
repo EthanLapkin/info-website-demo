@@ -1,5 +1,6 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import "../app.css";
 
 export default function MacFirst() {
 
@@ -15,7 +16,7 @@ export default function MacFirst() {
 
   return (
     <>
-        <div>
+        <section className="hero-section-mac fade-in">
             <p>
               The first thing we will address is how to open a window.
               When you open your computer past the login, you should see several small symbols at the bottom of your screen. 
@@ -25,7 +26,7 @@ export default function MacFirst() {
               You can only interact with one window at a time, and it&apos;s the one that is in front of everything else. 
               Try clicking on the white triangle shape on a blue background and then clicking on the blue and white smiley face again to see how changing windows works. 
             </p>
-        </div>
+        </section>
         <Container>
           <Row>
             <Col>

@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { FaWindows, FaApple, FaLinux } from "react-icons/fa";
-import "./Welcome.css"; // we'll add animations here
+import "../app.css";
 
 const Welcome = () => {
   const navigate = useNavigate();
@@ -14,7 +14,7 @@ const Welcome = () => {
     <main>
       {/* Hero Section */}
       <section
-        className="hero-section fade-in"
+        className="hero-section-main fade-in"
       >
         <h1 className="hero-title">Hello!</h1>
         <p className="hero-subtitle">
@@ -28,7 +28,7 @@ const Welcome = () => {
         <p className="fs-5">
           You can navigate using the guided buttons below or the menu at the top left.
           The first step is knowing your operating system (OS). The main ones covered
-          here are <strong>Windows</strong>, <strong>Mac</strong>, and <strong>Linux</strong>.
+          here are Windows, Mac, and Linux.
           Please choose yours to begin.
         </p>
       </Container>
