@@ -4,7 +4,7 @@ import "../app.css";
 export default function Linux() {
     return(
         <>
-        <p className="hero-title">Linux</p>
+        <p className="hero-title linux-text">Linux</p>
         <Outlet/>
         </>
     );

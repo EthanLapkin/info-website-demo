@@ -4,7 +4,7 @@ import "../app.css";
 export default function Windows() {
     return(
         <>
-        <p className="hero-title">Windows</p>
+        <p className="hero-title windows-text">Windows</p>
         <Outlet/>
         </>
     );

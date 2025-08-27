@@ -1,6 +1,5 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import "../app.css";
 
 export default function WindowsFirst() {
 
@@ -18,7 +17,7 @@ export default function WindowsFirst() {
     <>
         <section className="hero-section-windows fade-in">
             <p className="hero-subtitle">
-              The first thing we will address is how to open a window.
+              <strong>The first thing we will address is how to open a window</strong><br/>
               When you open your computer past the login, you should see several small symbols at the bottom of your screen, one of them being a yellow square with a small blue rectangle: this is a program called File Explorer. 
               If you take your cursor and hover over it, you will see that the name appears nearby. 
               Hovering over things is a good way to find out their name if there isn&apos;t one, or to see the full name if it is too long for the place it is displayed. 
@@ -27,7 +26,7 @@ export default function WindowsFirst() {
               Try clicking on the four blue boxes at the bottom left and then clicking on the yellow and blue rectangle again to see how changing windows works.
             </p>
         </section>
-        <Container>
+        <Container className="fade-in my-5">
           <Row>
             <Col>
               <Button variant="primary" size="lg" onClick={handleNext}>

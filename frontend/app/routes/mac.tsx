@@ -4,7 +4,7 @@ import "../app.css";
 export default function Mac() {
     return(
         <>
-        <p className="hero-title">Mac</p>
+        <p className="hero-title mac-text">Mac</p>
         <Outlet/>
         </>
     );

@@ -15,9 +15,9 @@ export default function MacSaveFile() {
 
   return (
     <>
-        <div>
-            <p>
-              Since we have created our file, let&apos;s save it and then find it afterwards
+        <section className="hero-section-mac fade-in">
+            <p className="hero-subtitle">
+              <strong>Since we have created our file, let&apos;s save it and then find it afterwards</strong><br/>
               After you have written whatever you wish in your text document, look to the top left of your screen for the word File and click on it.
               Now click on the words Save As that appear in the menu after clicking File. 
               This allows you to name your new file and choose its location. 
@@ -25,8 +25,8 @@ export default function MacSaveFile() {
               Now press the Save button in the bottom left of this window to save your new file. 
               Open Finder again and click the word Documents on the left of the window and see that your new file is now there. 
             </p>
-        </div>
-        <Container>
+        </section>
+        <Container className="fade-in my-5">
           <Row>
             {/* <Col>
               <Button variant="primary" size="lg" onClick={handleNext}>

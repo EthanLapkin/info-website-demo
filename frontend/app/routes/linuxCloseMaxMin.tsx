@@ -15,9 +15,9 @@ export default function LinuxCloseMaxMin() {
 
   return (
     <>
-        <div>
-            <p>
-              Allow me to quickly teach you about basic window management.
+        <section className="hero-section-linux fade-in">
+            <p className="hero-subtitle">
+              <strong>Allow me to quickly teach you about basic window management</strong><br/>
               After you&apos;ve opened up a window, look to the top right of the window, not the screen. 
               There should be three symbols, a line, a box, and an X. 
               the line is for minimize, which puts the window away but doesn&apos;t close it, the box is for maximize, which makes it take up your whole screen, 
@@ -25,8 +25,8 @@ export default function LinuxCloseMaxMin() {
               When a program is running, there will be a small orange dot beside the symbol on the left, this is how you an tell if you have closed or just minimized something. 
               Either way, you can click this symbol to bring it back, but it will come back instantly if it was just minimized. Try it yourself.
             </p>
-        </div>
-        <Container>
+        </section>
+        <Container className="fade-in my-5">
           <Row>
             <Col>
               <Button variant="primary" size="lg" onClick={handleNext}>

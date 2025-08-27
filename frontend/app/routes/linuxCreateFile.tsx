@@ -15,9 +15,9 @@ export default function LinuxCreateFile() {
 
   return (
     <>
-        <div>
-            <p>
-              Now let&apos;s create and open a file
+        <section className="hero-section-linux fade-in">
+            <p className="hero-subtitle">
+              <strong>Now let&apos;s create and open a file</strong><br/>
               If it isn&apos;t open already, open Files. 
               You will see the same words along the left of the window, click on Documents.
               You have now shifted to the Documents folder, which is a location in your computer. 
@@ -28,8 +28,8 @@ export default function LinuxCreateFile() {
                This will create a text file with the name you typed, and you can see it in the Documents folder if you go back to Files. 
                Double click on the file to open it and then write whatever you feel like.
             </p>
-        </div>
-        <Container>
+        </section>
+        <Container className="fade-in my-5">
           <Row>
             <Col>
               <Button variant="primary" size="lg" onClick={handleNext}>

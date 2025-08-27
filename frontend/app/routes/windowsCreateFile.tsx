@@ -15,9 +15,9 @@ export default function windowsCreateFile() {
 
   return (
     <>
-        <div>
-            <p>
-              Now let&apos;s create and open a file
+        <section className="hero-section-windows fade-in">
+            <p className="hero-subtitle">
+              <strong>Now let&apos;s create and open a file</strong><br/>
               If it isn&apos;t open already, reopen the file explorer from earlier. 
               Now, along the left side of the window you should see words next to symbols, click on the one named Documents, and see the window change slightly. 
               You have now shifted to the Documents folder, which is a location in your computer. 
@@ -30,8 +30,8 @@ export default function windowsCreateFile() {
               For now, click on Text Document. This creates a new file with the format “[name].txt” and the part after the dot tells the computer what type of file it is. 
               Name it whatever you like and then press the enter key. double left click on it and it will open in its own window.
             </p>
-        </div>
-        <Container>
+        </section>
+        <Container className="fade-in my-5">
           <Row>
             <Col>
               <Button variant="primary" size="lg" onClick={handleNext}>

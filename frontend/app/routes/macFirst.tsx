@@ -1,6 +1,5 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import "../app.css";
 
 export default function MacFirst() {
 
@@ -17,8 +16,8 @@ export default function MacFirst() {
   return (
     <>
         <section className="hero-section-mac fade-in">
-            <p>
-              The first thing we will address is how to open a window.
+            <p className="hero-subtitle">
+              <strong>The first thing we will address is how to open a window</strong><br/>
               When you open your computer past the login, you should see several small symbols at the bottom of your screen. 
               At the left most position will be a square blue and white smiley face: this is a program called Finder. 
               Hover your cursor over it and see the name appear above it, hovering over things is a good way to find out their name if there isn&apos;t one, or to see the full name if it is too long for the place it is displayed. 
@@ -27,7 +26,7 @@ export default function MacFirst() {
               Try clicking on the white triangle shape on a blue background and then clicking on the blue and white smiley face again to see how changing windows works. 
             </p>
         </section>
-        <Container>
+        <Container className="fade-in my-5">
           <Row>
             <Col>
               <Button variant="primary" size="lg" onClick={handleNext}>

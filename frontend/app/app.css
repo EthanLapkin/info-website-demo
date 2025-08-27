@@ -83,6 +83,10 @@ button:hover {
   text-align: center;
 }
 
+.windows-text {
+  color: #22b0db
+}
+
 .hero-section-mac {
   background: linear-gradient(135deg, #9e9e9ec5, #585858);
   color: white;
@@ -90,11 +94,19 @@ button:hover {
   text-align: center;
 }
 
+.mac-text {
+  color: #9e9e9ec5
+}
+
 .hero-section-linux {
   background: linear-gradient(135deg, #f8aa01, #b36601);
   color: white;
   padding: 4rem 1rem;
   text-align: center;
+}
+
+.linux-text {
+  color: #f8aa01
 }
 
 .hero-title {

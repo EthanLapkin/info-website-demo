@@ -15,9 +15,9 @@ export default function WindowsSaveFile() {
 
   return (
     <>
-        <div>
-            <p>
-              Since we have created our file, let&apos;s save it and then find it afterwards
+        <section className="hero-section-windows fade-in">
+            <p className="hero-subtitle">
+              <strong>Since we have created our file, let&apos;s save it and then find it afterwards</strong><br/>
               Look to the top left of the window for the word File, click on it and the words Save As that appear in the menu after clicking File. 
               This will open up a temporary window that lets you name your file and choose where on your computer it will be located. 
               Note that you cannot click away from temporary windows until you deal with them, 
@@ -27,8 +27,8 @@ export default function WindowsSaveFile() {
               Name it something different and then press Save in the bottom right. 
               Now click on the File Explorer again and go to Documents like before, and you should see two text files now.
             </p>
-        </div>
-        <Container>
+        </section>
+        <Container className="fade-in my-5">
           <Row>
             {/* <Col>
               <Button variant="primary" size="lg" onClick={handleNext}>
