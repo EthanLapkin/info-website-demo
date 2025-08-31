@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { FaWindows, FaApple, FaLinux } from "react-icons/fa";
 import "../app.css";
+import TableOfContents from "~/tableOfContents";
 
 const Welcome = () => {
   const navigate = useNavigate();
@@ -11,64 +12,69 @@ const Welcome = () => {
   const handleLinux = () => navigate("/linux/linux-disclaimer");
 
   return (
-    <main>
-      {/* Hero Section */}
-      <section
-        className="hero-section-main fade-in"
-      >
-        <h1 className="hero-title">Hello!</h1>
-        <p className="hero-subtitle">
-          This website explains basic computer concepts in a beginner-friendly way.
-          It&apos;s made in my free time, so while it might not be expert-level, I hope it helps you.
-        </p>
-      </section>
+    <>
+      <>
+        <TableOfContents/>
+      </>
+      <main>
+        {/* Hero Section */}
+        <section
+          className="hero-section-main fade-in"
+        >
+          <h1 className="hero-title">Hello!</h1>
+          <p className="hero-subtitle">
+            This website explains basic computer concepts in a beginner-friendly way.
+            It&apos;s made in my free time, so while it might not be expert-level, I hope it helps you.
+          </p>
+        </section>
 
-      {/* Intro */}
-      <Container className="my-5 fade-in">
-        <p className="fs-5">
-          You can navigate using the guided buttons below or the menu at the top left.
-          The first step is knowing your operating system (OS). The main ones covered
-          here are Windows, Mac, and Linux.
-          Please choose yours to begin.
-        </p>
-      </Container>
+        {/* Intro */}
+        <Container className="my-5 fade-in">
+          <p className="fs-5">
+            You can navigate using the guided buttons below or the menu at the top left.
+            The first step is knowing your operating system (OS). The main ones covered
+            here are Windows, Mac, and Linux.
+            Please choose yours to begin.
+          </p>
+        </Container>
 
-      {/* OS Selection */}
-      <Container className="text-center my-5 fade-in">
-        <Row className="justify-content-center g-4">
-          <Col xs={12} md={3}>
-            <Button
-              variant="light"
-              className="shadow-lg w-100 py-3 hover-rise"
-              onClick={handleWindows}
-            >
-              <FaWindows size={40} className="mb-2 text-primary" />
-              <div>Windows</div>
-            </Button>
-          </Col>
-          <Col xs={12} md={3}>
-            <Button
-              variant="light"
-              className="shadow-lg w-100 py-3 hover-rise"
-              onClick={handleMac}
-            >
-              <FaApple size={40} className="mb-2 text-dark" />
-              <div>Mac</div>
-            </Button>
-          </Col>
-          <Col xs={12} md={3}>
-            <Button
-              variant="light"
-              className="shadow-lg w-100 py-3 hover-rise"
-              onClick={handleLinux}
-            >
-              <FaLinux size={40} className="mb-2 text-warning" />
-              <div>Linux</div>
-            </Button>
-          </Col>
-        </Row>
-      </Container>
-    </main>
+        {/* OS Selection */}
+        <Container className="text-center my-5 fade-in">
+          <Row className="justify-content-center g-4">
+            <Col xs={12} md={3}>
+              <Button
+                variant="light"
+                className="shadow-lg w-100 py-3 hover-rise"
+                onClick={handleWindows}
+              >
+                <FaWindows size={40} className="mb-2 text-primary" />
+                <div>Windows</div>
+              </Button>
+            </Col>
+            <Col xs={12} md={3}>
+              <Button
+                variant="light"
+                className="shadow-lg w-100 py-3 hover-rise"
+                onClick={handleMac}
+              >
+                <FaApple size={40} className="mb-2 text-dark" />
+                <div>Mac</div>
+              </Button>
+            </Col>
+            <Col xs={12} md={3}>
+              <Button
+                variant="light"
+                className="shadow-lg w-100 py-3 hover-rise"
+                onClick={handleLinux}
+              >
+                <FaLinux size={40} className="mb-2 text-warning" />
+                <div>Linux</div>
+              </Button>
+            </Col>
+          </Row>
+        </Container>
+      </main>
+    </>
   );
 };
 
